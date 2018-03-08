@@ -17,6 +17,11 @@
 		D014CC381FDF413900534E62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D014CC361FDF413900534E62 /* LaunchScreen.storyboard */; };
 		D014CC431FDF413900534E62 /* Mission_ObjectiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D014CC421FDF413900534E62 /* Mission_ObjectiveTests.swift */; };
 		D014CC4E1FDF413900534E62 /* Mission_ObjectiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D014CC4D1FDF413900534E62 /* Mission_ObjectiveUITests.swift */; };
+		D014CC5F1FE1FFD600534E62 /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = D014CC5C1FE1FFC400534E62 /* explosion.wav */; };
+		D014CC601FE1FFD600534E62 /* backing audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D014CC5D1FE1FFCA00534E62 /* backing audio.mp3 */; };
+		D014CC621FE248F500534E62 /* laserSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = D014CC611FE248ED00534E62 /* laserSound.wav */; };
+		D0EF94AF1FE74C6B005F66BE /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EF94AE1FE74C6B005F66BE /* MainMenuScene.swift */; };
+		D0EF94B11FE74C91005F66BE /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EF94B01FE74C91005F66BE /* GameOverScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,16 @@
 		D014CC491FDF413900534E62 /* Mission ObjectiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mission ObjectiveUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D014CC4D1FDF413900534E62 /* Mission_ObjectiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission_ObjectiveUITests.swift; sourceTree = "<group>"; };
 		D014CC4F1FDF413900534E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D014CC5C1FE1FFC400534E62 /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion.wav; sourceTree = "<group>"; };
+		D014CC5D1FE1FFCA00534E62 /* backing audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "backing audio.mp3"; sourceTree = "<group>"; };
+		D014CC611FE248ED00534E62 /* laserSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laserSound.wav; sourceTree = "<group>"; };
+		D0C8D6392003C33A00A119AB /* explosion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion.png; sourceTree = "<group>"; };
+		D0C8D63A2003C33F00A119AB /* spacebackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spacebackground.png; sourceTree = "<group>"; };
+		D0C8D63B2003C34300A119AB /* enemy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy.png; sourceTree = "<group>"; };
+		D0C8D63C2003C34700A119AB /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
+		D0C8D63D2003C34C00A119AB /* laser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laser.png; sourceTree = "<group>"; };
+		D0EF94AE1FE74C6B005F66BE /* MainMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		D0EF94B01FE74C91005F66BE /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameOverScene.swift; path = ../GameOverScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +122,18 @@
 				D014CC291FDF413900534E62 /* GameScene.sks */,
 				D014CC2B1FDF413900534E62 /* Actions.sks */,
 				D014CC2D1FDF413900534E62 /* GameScene.swift */,
+				D0EF94AE1FE74C6B005F66BE /* MainMenuScene.swift */,
+				D0EF94B01FE74C91005F66BE /* GameOverScene.swift */,
 				D014CC2F1FDF413900534E62 /* GameViewController.swift */,
 				D014CC311FDF413900534E62 /* Main.storyboard */,
+				D014CC5C1FE1FFC400534E62 /* explosion.wav */,
+				D014CC611FE248ED00534E62 /* laserSound.wav */,
+				D014CC5D1FE1FFCA00534E62 /* backing audio.mp3 */,
+				D0C8D6392003C33A00A119AB /* explosion.png */,
+				D0C8D63B2003C34300A119AB /* enemy.png */,
+				D0C8D63C2003C34700A119AB /* player.png */,
+				D0C8D63A2003C33F00A119AB /* spacebackground.png */,
+				D0C8D63D2003C34C00A119AB /* laser.png */,
 				D014CC341FDF413900534E62 /* Assets.xcassets */,
 				D014CC361FDF413900534E62 /* LaunchScreen.storyboard */,
 				D014CC391FDF413900534E62 /* Info.plist */,
@@ -241,6 +266,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D014CC621FE248F500534E62 /* laserSound.wav in Resources */,
+				D014CC5F1FE1FFD600534E62 /* explosion.wav in Resources */,
+				D014CC601FE1FFD600534E62 /* backing audio.mp3 in Resources */,
 				D014CC331FDF413900534E62 /* Main.storyboard in Resources */,
 				D014CC2A1FDF413900534E62 /* GameScene.sks in Resources */,
 				D014CC351FDF413900534E62 /* Assets.xcassets in Resources */,
@@ -270,6 +298,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0EF94B11FE74C91005F66BE /* GameOverScene.swift in Sources */,
+				D0EF94AF1FE74C6B005F66BE /* MainMenuScene.swift in Sources */,
 				D014CC2E1FDF413900534E62 /* GameScene.swift in Sources */,
 				D014CC301FDF413900534E62 /* GameViewController.swift in Sources */,
 				D014CC281FDF413900534E62 /* AppDelegate.swift in Sources */,
@@ -441,6 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62SAG323SG;
 				INFOPLIST_FILE = "Mission Objective/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.learnappmaking.Mission-Objective";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -456,6 +487,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62SAG323SG;
 				INFOPLIST_FILE = "Mission Objective/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.learnappmaking.Mission-Objective";
 				PRODUCT_NAME = "$(TARGET_NAME)";
